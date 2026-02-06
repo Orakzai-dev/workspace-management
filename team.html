@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team View</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <main class="team-container">
+    <!-- Team List -->
+    <section id="team-list">
+      <h2>All Teams</h2>
+      <ul id="teams-ul"></ul>
+    </section>
+
+    <!-- Team Details -->
+    <section id="team-details" style="display:none;">
+      <h2 id="team-title"></h2>
+      <p id="team-desc"></p>
+      <h3>Members</h3>
+      <table id="team-members-table">
+        <thead>
+          <tr><th>Name</th><th>Email</th><th>Role</th><th>Status</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

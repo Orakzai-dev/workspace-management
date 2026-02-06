@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <main class="admin-container">
+    <!-- Team Management -->
+    <section id="team-management">
+      <h2>Manage Teams</h2>
+      <form id="team-form">
+        <input type="hidden" id="team-id" />
+        <div class="form-group">
+          <label for="team-name">Team Name</label>
+          <input type="text" id="team-name" required />
+        </div>
+        <div class="form-group">
+          <label for="team-desc">Description</label>
+          <textarea id="team-desc" required></textarea>
+        </div>
+        <button type="submit" class="primary-btn" style="margin: 20px 0px;">💾 Save Team</button>
+      </form>
+      <div id="team-table-container" style="overflow-x: auto;">
+        <p id="team-empty" class="empty-message" style="display: none;">No team available.</p>
+        <table id="team-table">
+          <thead>
+            <tr><th>Name</th><th>Description</th><th>Actions</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Member Management -->
+    <section id="member-management">
+      <h2>Manage Members</h2>
+      <form id="member-form" class="styled-form">
+        <input type="hidden" id="member-id" />
+        <div class="form-group">
+          <label>Name:</label>
+          <input type="text" id="member-name" required />
+        </div>
+        <div class="form-group">
+          <label>Email:</label>
+          <input type="email" id="member-email" required />
+        </div>
+        <div class="form-group">
+          <label>Role:</label>
+          <input type="text" id="member-role" required />
+        </div>
+        <div class="form-group">
+          <label>Assign to Team:
+            <select id="member-team" required></select>
+          </label>
+        </div>
+        <button type="submit" class="primary-btn">💾 Save Member</button>
+      </form>
+  
+      <div class="member-tools">
+        <input type="text" id="member-search" placeholder="🔍 Search by name or role..." />
+      </div>
+      <div id="member-table-container" style="overflow-x: auto;">
+        <p id="member-empty" class="empty-message" style="display: none;">No member available.</p>
+        <table id="member-table">
+          <thead>
+            <tr><th>Name</th><th>Email</th><th>Role</th><th>Team</th><th>Actions</th></tr>
+          </thead>
+          <tbody>
+            <!-- Rows dynamically inserted -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  
+    <!-- Team Summary -->
+    <section id="team-summary">
+      <div class="summary-header">
+        <h2>Team Summary</h2>
+        <button class="export-btn" onclick="exportToCSV()">📤 Export to CSV</button>
+      </div>
+      <div id="summary-table-container" style="overflow-x: auto;">
+        <p id="summary-empty" class="empty-message" style="display: none;">No summary available.</p>
+        <table id="summary-table">
+          <thead>
+            <tr><th>Team Name</th><th>Members Count</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
