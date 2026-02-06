@@ -2,9 +2,6 @@
 
 A modular, privacy-respecting web application for managing teams and members. Built with HTML, CSS, and JavaScript, this dashboard enables admins to create teams, assign members, and view team details — all with persistent data storage using LocalStorage.
 
-## 🚀 Live Demo
-[View on GitHub Pages](https://orakzai-dev.github.io/workspace-management/)  
-
 ---
 
 ## 📦 Features
