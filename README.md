@@ -3,7 +3,7 @@
 A modular, privacy-respecting web application for managing teams and members. Built with HTML, CSS, and JavaScript, this dashboard enables admins to create teams, assign members, and view team details — all with persistent data storage using LocalStorage.
 
 ## 🚀 Live Demo
-[View on GitHub Pages](https://afridi315.github.io/team-management/)  
+[View on GitHub Pages](https://Orakzai-dev.github.io/workspace-management/)  
 
 ---
 
@@ -78,22 +78,5 @@ team-management-dashboard/
 - Semantic HTML for accessibility and clarity
 - Theme toggle uses `localStorage` for persistence
 - CSV export uses Blob API for client-side download
-
----
-
-## 👨‍💻 Author
-
-**Enayat Afridi**  
-CEO & Lead Developer at Code Hunters IT Solutions  
-Expert in Android App and Web Development and culturally authentic UI/UX design.  
-🌐 [LinkedIn](https://www.linkedin.com/in/afridi315) | 🛠 [GitHub](https://github.com/afridi315)
-
----
-
-## 📬 Contact & Feedback
-
-Feel free to fork, contribute, or reach out for collaboration or feedback.  
-For inquiries: `enayat@codehunters.org`
-WhatsApp chat: [+923159223072](https://wa.me/+923159223072)
 
 ---
